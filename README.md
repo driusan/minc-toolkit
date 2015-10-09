@@ -39,6 +39,7 @@ Installing from github, need CMake > 2.8.8
 <pre><code>
   git clone --recursive git://github.com/BIC-MNI/minc-toolkit.git minc-toolkit
   cd minc-toolkit
+  git submodule init && git submodule update
   mkdir build && cd build
   ccmake .. # Enter the location of all dependencies, if not detected automatically ..., 
   make && make test && make install
